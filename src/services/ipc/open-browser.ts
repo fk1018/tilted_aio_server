@@ -1,4 +1,4 @@
-import { OPEN_BROWSER } from '../../strings'
+import { OPEN_BROWSER } from '../../../../tilted_aio_shared/strings'
 import { open } from '../browser/open'
 export const openBrowser = async (ipc: any, data: any) => {
 	ipc.on(OPEN_BROWSER, async (event: any, message: any) => {

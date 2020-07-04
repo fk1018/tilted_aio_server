@@ -5,7 +5,7 @@ import * as path from 'path'
 import * as isDev from 'electron-is-dev'
 import { initializeData } from "./services/data/initializeData";
 import { bindIPCHandlers } from "./services/ipc/bind";
-import { LOAD_INITIAL_DATA } from "./strings";
+import { LOAD_INITIAL_DATA } from "../../tilted_aio_shared/strings";
 let mainWindow: any;
 
 let data: any;

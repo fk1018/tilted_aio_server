@@ -1,4 +1,4 @@
-import { OPEN_BROWSER_GROUP } from "../../strings";
+import { OPEN_BROWSER_GROUP } from "../../../../tilted_aio_shared/strings";
 import { open } from '../browser/open'
 export const openBrowserGroup = async (ipc: any, data: any) => {
 	ipc.on(OPEN_BROWSER_GROUP, async (event: any, message: any) => {

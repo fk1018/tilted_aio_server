@@ -1,5 +1,5 @@
 import { open } from '../browser/open'
-import { OPEN_ALL_BROWSERS } from '../../strings'
+import { OPEN_ALL_BROWSERS } from '../../../../tilted_aio_shared/strings'
 
 export const openAllBrowsers = async (ipc: any, data: any) => {
 	ipc.on(OPEN_ALL_BROWSERS, async (event: any, message: any) => {
