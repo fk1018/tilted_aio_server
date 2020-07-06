@@ -22,7 +22,7 @@ export const main = (url: any, proxyz: any) => {
 			mainWindow = null;
 		});
 		//Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36 - linux chrome
-		session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
+		session.defaultSession.webRequest.onBeforeSendHeaders((details: any, callback: any) => {
 			details.requestHeaders['User-Agent'] =
 				'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1';
 			callback({ requestHeaders: details.requestHeaders });
@@ -56,7 +56,7 @@ export const main = (url: any, proxyz: any) => {
 		if (process.platform !== 'darwin') app.quit();
 	});
 
-	app.on('login', (event, webContents, request, authInfo, callback) => {
+	app.on('login', (event: any, webContents: any, request: any, authInfo: any, callback: any) => {
 		event.preventDefault();
 		callback(proxy.userName, proxy.password);
 	});

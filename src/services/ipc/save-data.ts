@@ -16,7 +16,7 @@ import {
   UPDATE_PROXY_GROUPS,
   UPDATE_BROWSER_GROUPS,
   UPDATE_TASKS
-} from '../../../../tilted_aio_shared/strings';
+} from 'tilted_aio_shared'
 export const saveData = async (ipc: any, data: any) => {
   ipc.on(SAVE_DATA, (event: any, message: any) => {
     const opt = JSON.parse(message);
