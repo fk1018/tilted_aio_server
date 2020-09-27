@@ -6,8 +6,8 @@
 		"@types/jest": "^24.0.0",
 		"@types/uuid": "^3.4.6",
 		"proxy-chain": "^0.3.3",
-		"tilted_aio_shared": "../tilted_aio_shared",
-		"typescript": "~3.7.2",
+		"tilted_aio_shared": "file:../tilted_aio_shared",
+		"typescript": "~4.1.0-beta",
 		"uuid": "^3.4.0"
 	},
 	"scripts": {
@@ -18,8 +18,16 @@
 		"createbrowser": "electron public/createBrowser.js"
 	},
 	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	},
 	"devDependencies": {
 		"@types/node": "^12",
